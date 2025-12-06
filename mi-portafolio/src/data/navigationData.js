@@ -10,7 +10,7 @@ export const socialLinks = [
   {
     id: 'github',
     label: 'GitHub',
-    url: 'https://github.com/TU_USUARIO',
+    url: 'https://github.com/crisst',
     icon: 'Github'
   },
   {
@@ -22,7 +22,7 @@ export const socialLinks = [
   {
     id: 'email',
     label: 'Email',
-    url: 'mailto:tu@email.com',
+    url: 'mauricioblasquez003@gmail.com',
     icon: 'Mail'
   }
 ];
