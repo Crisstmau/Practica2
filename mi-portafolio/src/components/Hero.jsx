@@ -26,15 +26,20 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          {/* Avatar */}
+          {/* Avatar - MODIFICADO: Ahora usa imagen en lugar de emoji */}
           <div className="hero-avatar">
             <div className="avatar-circle">
-              <span className="avatar-emoji">{personalInfo.avatar}</span>
+              {/* Reemplazado el emoji por una imagen */}
+              <img 
+                src={personalInfo.avatar} 
+                alt={`Avatar de ${personalInfo.name}`}
+                className="avatar-image"
+              />
             </div>
             <div className="avatar-glow"></div>
           </div>
 
-          {/* Texto Principal */}
+          {/* Texto Principal - CORREGIDO: "Hola_Sov" por "Hola, Soy" */}
           <h1 className="hero-title">
             Hola, Soy <span className="hero-name">{personalInfo.name}</span>
           </h1>
