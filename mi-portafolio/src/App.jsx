@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import About from './components/About';
 import './index.css';
 
 function App() {
@@ -8,21 +9,9 @@ function App() {
     <div style={{ minHeight: '100vh' }}>
       <Header />
       <Hero />
+      <About />
       
       {/* Secciones temporales */}
-      <section 
-        id="about" 
-        style={{ 
-          minHeight: '100vh',
-          background: '#1e293b',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
-      >
-        <h2 style={{ fontSize: '3rem', color: '#dc2626' }}>Sobre Mí</h2>
-      </section>
-      
       <section 
         id="projects" 
         style={{ 

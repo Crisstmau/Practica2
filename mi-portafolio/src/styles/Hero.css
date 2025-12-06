@@ -45,7 +45,7 @@
   }
 }
 
-/* Avatar */
+/* Avatar - MODIFICADO: Estilos para imagen */
 .hero-avatar {
   position: relative;
   display: inline-block;
@@ -64,6 +64,7 @@
   position: relative;
   z-index: 2;
   animation: pulse 3s ease-in-out infinite;
+  overflow: hidden; /* Importante para que la imagen no sobresalga */
 }
 
 @keyframes pulse {
@@ -75,21 +76,18 @@
   }
 }
 
-.avatar-circle::before {
-  content: '';
-  position: absolute;
-  inset: 0;
+/* NUEVO: Estilo para la imagen del avatar */
+.avatar-image {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background: #1e293b;
-  z-index: -1;
-  margin: 4px;
-}
-
-.avatar-emoji {
-  font-size: 5rem;
-  position: relative;
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
   z-index: 1;
 }
+
+/* ELIMINADO: .avatar-circle::before (ya no es necesario con imagen) */
+
+/* ELIMINADO: .avatar-emoji (reemplazado por .avatar-image) */
 
 .avatar-glow {
   position: absolute;
@@ -112,7 +110,7 @@
   }
 }
 
-/* Texto */
+/* Texto - CORREGIDO: Ahora dice "Hola, Soy" correctamente */
 .hero-title {
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 700;
@@ -257,10 +255,6 @@
     height: 130px;
   }
 
-  .avatar-emoji {
-    font-size: 4rem;
-  }
-
   .hero-buttons {
     flex-direction: column;
     align-items: stretch;
@@ -278,10 +272,6 @@
   .avatar-circle {
     width: 110px;
     height: 110px;
-  }
-
-  .avatar-emoji {
-    font-size: 3rem;
   }
 
   .hero-description {
