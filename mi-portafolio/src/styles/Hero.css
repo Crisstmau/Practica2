@@ -283,3 +283,124 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+    min-height: auto;
+  }
+
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 4vw, 1.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .hero-buttons {
+    padding: 0 1rem;
+  }
+
+  .hero-btn {
+    padding: 0.875rem 2rem;
+    font-size: 0.938rem;
+    min-height: 48px;
+  }
+
+  .hero-social {
+    margin-bottom: 2rem;
+  }
+
+  .social-link {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 90px 0 40px;
+  }
+
+  .avatar-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .avatar-emoji {
+    font-size: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .hero-description {
+    font-size: 0.938rem;
+    padding: 0 0.5rem;
+  }
+
+  .hero-buttons {
+    gap: 0.75rem;
+    padding: 0;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero-social {
+    gap: 1rem;
+  }
+
+  .social-link {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Landscape móvil */
+@media (max-width: 768px) and (max-height: 500px) {
+  .hero {
+    padding: 80px 0 40px;
+  }
+
+  .avatar-circle {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+
+  .avatar-emoji {
+    font-size: 2rem;
+  }
+
+  .hero-arrow {
+    display: none;
+  }
+}
