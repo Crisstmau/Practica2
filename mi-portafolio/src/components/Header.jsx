@@ -44,7 +44,7 @@ function Header() {
       <nav className="header-container">
         <div className="header-content">
           <div className="logo">
-            {"<Dev />"}
+            {"hello I'm Mau"}
           </div>
 
           <div className="nav-desktop">
