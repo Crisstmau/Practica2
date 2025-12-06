@@ -1,9 +1,10 @@
+import gatoImage from '../assets/gato.webp'; 
 export const personalInfo = {
   name: "Cristian Mauricio Ortega Blasquez",
   title: "Desarrollador Full Stack",
   subtitle: "Especializado en React, Node.js y tecnologías modernas",
   description: "Apasionado por crear experiencias web increíbles y resolver problemas complejos",
-  avatar: "👨‍💻", // Puedes cambiar por tu emoji favorito
+  avatar: gatoImage, // Puedes cambiar por tu emoji favorito
   resumeUrl: "#", // Link a tu CV (puedes dejarlo así por ahora)
 };
 
